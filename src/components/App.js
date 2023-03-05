@@ -7,6 +7,7 @@ import {BrowserRouter as Router, Route, Routes, Redirect} from "react-router-dom
 import Home from './Home/Home';
 import Chart from './Chart/Chart';
 
+import Todo from './Todo';
 
 import './App.css'
 
@@ -25,9 +26,9 @@ class App extends Component {
             <Router>
               <Routes>
                   <Route exact path="/" element={<Home/>}/>
-                  
+                  <Route exact path="/todo" element={<Todo/>}/>
                   <Route exact path="/chart" element={<Chart/>}/>
-                 
+            
               </Routes>
       
           `</Router>
