@@ -6,7 +6,7 @@ import Content from '../shared/components/layout/Content'
 import {BrowserRouter as Router, Route, Routes, Redirect} from "react-router-dom";
 import Home from './Home/Home';
 import Chart from './Chart/Chart';
-
+import Coins from './Coins/Coins';
 import Todo from './Todo';
 
 import Pomodoro from './Pomodoro/Timer';
@@ -30,7 +30,8 @@ class App extends Component {
                   <Route exact path="/" element={<Home/>}/>
                   <Route exact path="/todo" element={<Todo/>}/>
                   <Route exact path="/chart" element={<Chart/>}/>
-                  
+                  <Route exact path="/coins" element={<Coins/>}/>
+                 
                   <Route exact path="/po" element={<Pomodoro/>}/>
               </Routes>
       
