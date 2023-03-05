@@ -5,6 +5,8 @@ import Footer from '../shared/components/layout/Footer'
 import Content from '../shared/components/layout/Content'
 import {BrowserRouter as Router, Route, Routes, Redirect} from "react-router-dom";
 import Home from './Home/Home';
+import Chart from './Chart/Chart';
+
 
 import './App.css'
 
@@ -24,6 +26,8 @@ class App extends Component {
               <Routes>
                   <Route exact path="/" element={<Home/>}/>
                   
+                  <Route exact path="/chart" element={<Chart/>}/>
+                 
               </Routes>
       
           `</Router>
