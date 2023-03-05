@@ -9,6 +9,8 @@ import Chart from './Chart/Chart';
 
 import Todo from './Todo';
 
+import Pomodoro from './Pomodoro/Timer';
+
 import './App.css'
 
 class App extends Component {
@@ -28,7 +30,8 @@ class App extends Component {
                   <Route exact path="/" element={<Home/>}/>
                   <Route exact path="/todo" element={<Todo/>}/>
                   <Route exact path="/chart" element={<Chart/>}/>
-            
+                  
+                  <Route exact path="/po" element={<Pomodoro/>}/>
               </Routes>
       
           `</Router>
